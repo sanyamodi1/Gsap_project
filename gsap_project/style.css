@@ -1,0 +1,107 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+@font-face {
+    font-family: ppwoodland;
+    src: url(ppwoodland-ultralight.otf);
+}
+html , body {
+    height: 100%;
+    width:100%;
+}
+.page1{
+    height: 100vh;
+    width:100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.page1 img{
+    height: 50%;
+    width:50%;
+    border-radius: 7px;
+    object-fit: cover;
+    position: relative;
+    left:50%;
+    transform: translateX(-50%);
+}
+.page1 svg{
+    position: absolute;
+    /* z-index: 1; */
+    height: 8vh;
+    top:-20%;
+    fill: rgba(0, 0, 0, 0.7);
+    opacity: 0;
+}
+.nav{
+    height: 20vh;
+    width:100%;
+    display: flex;
+    z-index: 1;
+    justify-content: center;
+}
+
+.line{
+    height:2px;
+    width:45px;
+    position: absolute;
+    top:5%;
+    left:5%;
+    background-color: black;
+}
+.line2{
+    content: "";
+    height: 2px;
+    width:45px;
+    position:absolute;
+    left:5%;
+    top:6%;
+    background-color: black;
+}
+.line3{
+    content: "";
+    height: 2px;
+    width:45px;
+    position:absolute;
+    left:5%;
+    top:4%;
+    background-color: black;
+}
+.left{
+    opacity: 0;
+}
+.btn1{
+    color:#5B6647;
+    border: 1px solid #E3E3C4;
+    border-radius: 20px;
+    position: absolute;
+    right:13%;
+    top:5%;
+    font-size: 18px;
+    padding: 0.5% 0.7%;
+}
+.btn2{
+    color:#ffffff;
+    background-color: #434B34;
+    border: 1px solid #434B34;
+    border-radius: 20px;
+    position: absolute;
+    right:5%;
+    top:5%;
+    font-size: 18px;
+    padding: 0.5% 0.7%;
+}
+.page2{
+    height: 180vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: ppwoodland;
+    background-color: #626E4D;
+    color:#434B34;
+}
+.page2 h1{
+    font-size: 11vh;
+}
